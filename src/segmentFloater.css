@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  height: 100%;
+  overflow: auto;
+  outline: 1px solid black;
+  position: absolute;
+  right: -100%; /* Start off the screen */
+  top: 0;
+  box-sizing: border-box;
+  animation: slideInFromRight 0.5s ease forwards; /* Animation to slide in */
+}
+
+.SchemaContainer {
+  outline: 2px solid #7cb0df;
+  /* width: fit-content; */
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+.SchemaItem {
+  display: flex;
+  width: 100%;
+}
+
+.SchemaItem > * {
+  margin-right: 5px;
+}
+.SchemaItem > div {
+  width: 95%;
+}
+.addItemLink {
+  color: #65c3ab;
+  cursor: pointer;
+  border-bottom: 2px solid #65c3ab;
+  width: max-content;
+}
+.segmentContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+}
+.savingSegment {
+  width: 100%;
+  background-color: #2e8e99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3rem 0;
+  color: white;
+  font-weight: bold;
+}
+.segmentBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-start;
+}
+.saveSegmentButtonContainer {
+  padding: 10px;
+}
+.bgColorContainer {
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+}
+.cancelButton {
+  border: none;
+  background-color: white;
+  padding: 14px;
+  border-radius: 5px;
+  color: #c15578;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.saveSchemaButton {
+  border: none;
+  background-color: #41b494;
+  padding: 14px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.segmentInputBox {
+  width: 96%;
+  padding: 7px;
+}
+.schema-btn {
+  background-color: #e8f1ef;
+  border: none;
+  border-radius: 4px;
+}
+.schema-btn > span {
+  width: 1.8rem;
+  height: 6px;
+  border-radius: 30%;
+  background-color: #6f839a;
+  display: inline-block;
+}
+@keyframes slideInFromRight {
+  from {
+    right: -100%; /* Start off the screen */
+  }
+  to {
+    right: 0; /* Slide in to the right */
+  }
+}

@@ -1,0 +1,18 @@
+.SchemaItem {
+  display: flex;
+}
+
+.SchemaItem > * {
+  margin-bottom: 10px;
+  width: 10%;
+}
+.saveSchemaBtn {
+  border: none;
+  background-color: #41b494;
+  padding: 14px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 2rem;
+}
